@@ -1,0 +1,24 @@
+
+
+Finding duplicates in an array.
+
+Given an array find the number of duplicate in that array below code runs a function which finds duplicates in an array.
+------------------------------------------------------------------------------------------
+nums = [1,1, 2,2, 3,3,3, 4,4,5, 6, 7]
+counter = 0
+
+function duplicate(){
+    for(i=0; i<nums.length; i++){
+        for(j=i+1; j<nums.length; j++){
+        if (nums[i] === nums[j]){
+            counter += 1;
+            break;
+            }
+        }   
+    }  
+    console.log('number of duplicates', counter)
+}
+
+
+duplicate()
+-----------------------------------------------------------------------------------------
