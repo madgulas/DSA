@@ -22,3 +22,30 @@ function duplicate(){
 
 duplicate()
 -----------------------------------------------------------------------------------------
+
+Finding missing number in an array
+
+Given an array of length n find the missing number in that array provided the array starts from desending to ascending order.
+
+------------------------------------------------------------------------------------------
+nums = [5,6,8]
+
+function sum(){
+        let actual_sum = 0
+    for( let i=0; i<nums.length; i++){
+        actual_sum += nums[i]
+        
+    }
+    console.log(actual_sum)
+    let n = nums[nums.length -1]
+    let m = nums[0]
+    let expected_sum = (n * (n + 1)) / 2 - ((m - 1) * m) / 2;
+        
+    let missing = expected_sum - actual_sum;
+        
+    console.log(missing)
+        
+}
+
+sum()
+-----------------------------------------------------------------------------------------
